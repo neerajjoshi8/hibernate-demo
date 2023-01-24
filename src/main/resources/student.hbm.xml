@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.example.entity.Student" table="STUDENT">
+        <id name="id" column="STUDENT_ID" type="java.lang.Long">
+            <generator class = "sequence"/>
+        </id>
+        <property name="name" column="NAME" type="java.lang.String" length="20"/>
+        <property name="email" column="EMAIL" type="java.lang.String" length="50"/>
+        <property name="department" column="DEPARTMENT" type="java.lang.String" length="5"/>
+    </class>
+</hibernate-mapping>
